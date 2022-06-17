@@ -1,0 +1,24 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<div [ngStyle]="{
+  'background-image': 'url(https://www.linkpicture.com/q/wepik-202254-20649.jpg)',
+  'min-height': '100%',
+  'background-position': 'center',
+  'background-size': 'cover'
+}">
+<div id="fix-for-navbar-fixed-top-spacing" style="height: 60px;">&nbsp;</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-black ">
+  <div style = "margin-top:200px;margin-left:240px ; border-style:solid ;" class="w3-display-left">
+    <h1 class="w3-xxxlarge w3-animate-top w3-margin-left w3-margin-left;">WELCOME TO THE DIARY&nbsp;</h1>
+    <p class="w3-large w3-center">Number of diaries : {{ diaries.length }}</p>
+    <p class="w3-large w3-center">Earliest diary: {{ dates.minDate }}</p>
+    <p class="w3-large w3-center">Latest diary: {{ dates.maxDate }}</p><br>
+    <p style="text-align:center;"><a class=" w3-center btn btn-warning mybutton" routerLink="/diaries/new" href="#" role="button">Add New Diary +</a></p>
+  </div>
+</div>
+
+<div id="fix-for-navbar-fixed-bottom-spacing" style="height: 500px;">&nbsp;</div>
+
+</div>

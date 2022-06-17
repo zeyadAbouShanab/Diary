@@ -1,0 +1,39 @@
+.h2 {
+  font-family: Stencil Std, fantasy;
+  font-size: 54px;
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 150px;
+  font-weight: 600;
+}
+.txt{
+  font-family: Stencil Std, fantasy;
+  font-size: 18px;
+  text-decoration: none;
+  color: aliceblue;
+  margin-top: 150px;
+  margin-left: 350px;
+  font-weight: 300;
+}
+img {
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  margin-top: 150px;
+  margin-left: 100px;
+
+}
+.zi{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+  font-size: 28px;
+  font-weight: 700;
+  font-family:Comic Sans MS, Comic Sans, cursive
+
+}

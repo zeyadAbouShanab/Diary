@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<div [ngStyle]="{
+  'background-image': 'url(https://wallpaper.dog/large/10881773.jpg)',
+  'min-height': '100%',
+  'background-position': 'center'
+}">
+  <div id="fix-for-navbar-fixed-top-spacing" style="height: 30px;">&nbsp;</div>
+
+  <p style="text-align:center;">
+    <a class="h2">My diaries</a><br><br><br>
+    <a class=" w3-center btn btn-warning mybutton" routerLink="/diaries/new" href="#" role="button">Add New Diary
+      +</a><br><br>
+  </p>
+
+<a *ngFor="let diary of diaries">
+<div class="card container">
+  <a class=" w3-center btn btn-primary editbutton" [routerLink]="['/diaries', diary.id, 'edit']" role="button">Edit Diary</a>
+  <h2 class="cardHeader">{{ diary.title }}</h2>
+  <h5 class="cardDate">{{ diary.date_of_entry }}</h5>
+  <p class="cardDiary">{{ diary.entry_text }}</p>
+</div>
+<hr color="white" size="20px" noshade >
+</a>
+
+  <div id="fix-for-navbar-fixed-bottom-spacing" style="height: 50px;">&nbsp;</div>

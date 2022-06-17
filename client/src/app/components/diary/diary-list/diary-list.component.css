@@ -1,0 +1,67 @@
+.h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 48px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline;
+    font-weight: 600;
+    border-radius: 25px;
+    border-width: medium;
+    border-style: solid;
+}
+
+.card {
+    margin-left: 32px;
+    margin-right: 32px;
+    text-align: center;
+    background-image: url(https://img.freepik.com/free-photo/textured-background-white-tone_53876-128610.jpg);
+}
+
+.cardHeader {
+    font-family: URW Chancery L, cursive;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.cardDate {
+    color: black;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-style: italic
+}
+
+.cardDiary {
+    font-family: Papyrus, fantasy;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.mybutton {
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.editbutton {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: large;
+}
+

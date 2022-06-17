@@ -40,7 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-server/DiaryAPI/.gitignore
-client/src/assets/.gitkeep
-server/DiaryAPI/.gitattributes
-server/DiaryAPI/bootstrap/cache/.gitignore

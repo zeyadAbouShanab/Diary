@@ -1,0 +1,41 @@
+<div [ngStyle]="{
+  'background-image': 'url(https://wallpaper.dog/large/10881773.jpg)',
+  'min-height': '100%',
+  'background-position': 'center',
+  'background-size': 'cover'
+}">
+<div id="fix-for-navbar-fixed-top-spacing" style="height: 30px;">&nbsp;</div>
+
+<p style="text-align:center;">
+  <a class="h2">{{ diary?.id ? 'Edit' : 'New' }} diary</a><br><br><br>
+</p>
+<form action="" (ngSubmit)="onSubmit()" [formGroup]="diaryForm">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input
+      type="text"
+      placeholder="Title"
+      formControlName="title"
+      class="form-control"
+      [class.is-invalid]="setIsInvalidClass('title')"
+      [class.is-valid]="diaryForm.get('title')?.valid"
+    />
+    <div class="invalid-feedback">Please provide a title!</div>
+  </div><br>
+  <div class="form-group">
+    <label for="entry_text">Diary text</label>
+    <textarea
+      rows="5"
+      formControlName="entry_text"
+      placeholder="Diary text"
+      class="form-control"
+      [class.is-invalid]="setIsInvalidClass('entry_text')"
+      [class.is-valid]="diaryForm.get('entry_text')?.valid"
+    ></textarea>
+    <div class="invalid-feedback">Please provide a diary text!</div>
+  </div><br>
+  <p style="text-align:center;"> <button style="width:200px;height: 50px;" type="submit" class="btn btn-success vertical-center" [disabled]="diaryForm.invalid">
+    Submit
+  </button></p>
+</form>
+<div id="fix-for-navbar-fixed-bottom-spacing" style="height: 150px;">&nbsp;</div>
